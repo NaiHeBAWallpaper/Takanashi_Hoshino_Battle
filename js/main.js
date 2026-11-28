@@ -43,7 +43,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0258';
@@ -62,12 +63,12 @@ const AUDIO_DETAIL = [
 				"こうなったら、朝まで待つしかないねぇ。"
 			],
 			English: [
-				"Ah, it's already gotten this late, huh...",
-				"In that case, we'll just have to wait until morning."
+				"Yikes. I really lost track of time.",
+				"We'll just have to hang out here until the sun comes up."
 			],
 			Chinese: [
-				"咿呀~都这个点了吗",
-				"那这样的话、只能在这等到早上了啊。"
+				"哎呀，没想到已经这么晚了。",
+				"照这样下去，就只能乖乖等到天亮了。"
 			],
 			TraditionalChinese: [
 				"哎呀～時間都已經這麼晚了呀。",
@@ -76,7 +77,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"이야, 벌써 시간이 이렇게 되었네.",
 				"꼼짝없이 해가 뜰 때까지 기다릴 수밖에."
-			]
+			],
+			Thai: ["อ่า... เวลาผ่านไป ขนาดนี้แล้วเหรอเนี่ย","ถ้าแบบนี้ คงจะต้อง รออยู่เฉยๆ จนกว่า พระอาทิตย์จะขึ้นแล้วสินะ"]
 		}
 	},
 	{
@@ -86,45 +88,47 @@ const AUDIO_DETAIL = [
 				"またまたぁ～こんなおじさんといたって、別に楽しくないでしょ～"
 			],
 			English: [
-				"Eh?",
-				"There you go again~ It's no fun hanging around an old-timer like me, though~"
+				"...Huh?",
+				"C'mon, what could be so good about being stuck here with an old-timer like me?"
 			],
 			Chinese: [
-				"...诶？",
-				"又来了啊~和这样的大叔呆在一起、很无聊的哦~"
+				"诶？",
+				"哎呀，和我这种大叔待在一起能有什么好玩的。"
 			],
 			TraditionalChinese: [
-				"啊？",
+				"……咦？",
 				"又來了又來了～跟這種大叔待在一起，其實一點也不有趣吧～"
 			],
 			Korean: [
-				"앗?",
+				"응?",
 				"에이에이, 이런 아저씨랑 같이 있어 봤자 뭐가 재밌다구."
-			]
+			],
+			Thai: ["หืม?","โธ่เอ๊ย... ต้องมาอยู่ กับลุงแก่ๆ แบบนี้ มีอะไรน่าสนุกกันเล่า"]
 		}
 	},
 	{
 		dialog: {
 			Japanese: [
-				"う、うへぇ～…",
-				"その設定、まだやるの…？おじさんにはちょっ荷が重いかも～"
+				"う、うへぇ～…その設定、まだやるの…？",
+				"おじさんにはちょっと荷が重いかも～"
 			],
 			English: [
-				"U-Uhehe~...",
-				"You're still going on about that? It might be too much for me..."
+				"Heh...heehee... How long are you gonna keep up the bit?",
+				"You're taking it way too far."
 			],
 			Chinese: [
-				"诶嘿嘿....",
-				"又是那种设定吗？感觉大叔我身上的担子也太重了~"
+				"呜，呜嘿嘿~这个设定，还要一直用下去吗……",
+				"大叔可能会有点压力山大啊~"
 			],
 			TraditionalChinese: [
-				"誒嘿嘿....",
-				"又是那種設定嗎？感覺大叔我身上的擔子也太重了~"
+				"唔，唔嘿～那個設定，還要堅持下去嗎……？",
+				"對大叔我來說，負擔好像有點重呢～"
 			],
 			Korean: [
-				"으, 으헤헤~…",
-				"아직도 그런 얘기를 하고 있어?"
-			]
+				"으, 으헤에~. 그 설정, 계속 가는 것이려나…",
+				"아저씨는 조금 부담스러울지도~."
+			],
+			Thai: ["อะ...อะแหะๆ~ ยังไม่เลิก พูดแบบนั้นอีกงั้นเหรอ...","ตาลุงคนนี้... ก็เขินอยู่หน่อยๆ นะ~"]
 		}
 	},
 	{
@@ -134,12 +138,12 @@ const AUDIO_DETAIL = [
 				"んじゃ、ヒーローと相棒の質素な夕食にしよっか。…非常食だけど。"
 			],
 			English: [
-				"...Well, if Sensei agrees to be my sidekick, then maybe I'll play along.",
-				"Then, how about the hero and sidekick have dinner? ...Just emergency rations, though."
+				"...Well, if you really want to keep being my sidekick, I guess I'll play along.",
+				"Then how about a hero-and-sidekick dinner? Just emergency rations, but..."
 			],
 			Chinese: [
-				"....嘛、如果老师愿意作为我的伙伴一起的话、我也会配合的啦。",
-				"那、英雄就和他的伙伴就一起来吃顿简单的晚餐吧。....虽然是应急食品。"
+				"……这个嘛，如果老师愿意当我的搭档的话，我也不是不能配合啦。",
+				"那，英雄和搭档要来一顿简单的晚餐吗？……虽然只是应急的口粮。"
 			],
 			TraditionalChinese: [
 				"……算了，如果老師願意擔任夥伴職位的話……我就配合一下吧。",
@@ -148,7 +152,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"…뭐어, 선생이 사이드킥을 하고 싶다면 맞춰주지 못 할 것도 없지만.",
 				"그럼, 히어로와 사이드킥의 조촐한 저녁 식사야. …비상식량이지만."
-			]
+			],
+			Thai: ["เอาเถอะ... ถ้าเกิดว่า ครูอยากจะเป็นไซคิกละก็ ลุงจะยอมเล่นด้วยก็แล้วกัน","ถ้างั้นเรามากินมื้อค่ำแบบง่ายๆ ของฮีโร่กับไซคิกกัน ...ถึงจะเป็นแค่อาหารฉุกเฉินก็เถอะ"]
 		}
 	},
 	{
@@ -158,12 +163,12 @@ const AUDIO_DETAIL = [
 				"おじさんはこれが好きなんだ。大目にみてよ～"
 			],
 			English: [
-				"Well, yeah, that's true...",
-				"But I really like them. Go easy on me~"
+				"Well, you could say that, but...",
+				"This old-timer still likes it too. Humor me, please!"
 			],
 			Chinese: [
-				"这么说的话、也行吧~",
-				"大叔我很喜欢这个的啦。就将就一下嘛~"
+				"唔，这么说也没错啦……",
+				"诶嘿，大叔我就是好这口。多包涵一下吧~"
 			],
 			TraditionalChinese: [
 				"這個嘛，雖然那麼說也沒錯～",
@@ -172,7 +177,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"뭐어, 그건 맞지만….",
 				"아저씨는 이런 걸 좋아한다구. 너그럽게 봐줘~."
-			]
+			],
+			Thai: ["ก็นะ เรื่องนั้นมันก็ใช่อยู่หรอก...","แต่ลุงน่ะ ชอบของพวกนี้นะ ยอมๆ ให้หน่อยเถอะน่า~"]
 		}
 	}
 ];
@@ -284,7 +290,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -454,6 +460,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -467,6 +483,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -476,7 +494,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
